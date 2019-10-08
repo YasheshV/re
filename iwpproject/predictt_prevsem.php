@@ -65,10 +65,12 @@ while($row = mysqli_fetch_assoc($query))
 			$temp2=5;
 		if($row['actualgrades']=='F')
 			$temp2=4;	
-
+		
+		$temp1=$temp1*10;
+		$temp2=$temp2*10;
 		$temp=$temp1;
 		$temp+=$temp2;
-		$temp/=2;
+		$temp/=20;
 		
 		if($temp==10)
 			$gradeexp='S';
