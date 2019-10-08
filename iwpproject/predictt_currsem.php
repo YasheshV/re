@@ -41,7 +41,7 @@ while($row = mysqli_fetch_assoc($query1))
 	$summ2+=$row['mark2_CAT2'];
 	
 }
-$sum_sub2=($summ1)/8 + ($summ2)/8;
+$sum_sub2=($summ1)/7 + ($summ2)/7;
 $mean_sub2 = $sum_sub2/16.0;
 
 
@@ -60,7 +60,7 @@ while($row = mysqli_fetch_assoc($query2))
 	
 }
 
-$sum_sub3=($summ1)/8 + ($summ2)/8;
+$sum_sub3=($summ1)/7 + ($summ2)/7;
 $mean_sub3 = $sum_sub3/16.0;
 
 $summ1=0;
@@ -78,7 +78,7 @@ while($row = mysqli_fetch_assoc($query3))
 	$summ2+=$row['mark4_CAT2'];
 	
 }
-$sum_sub4=($summ1)/8 + ($summ2)/8;
+$sum_sub4=($summ1)/7 + ($summ2)/7;
 $mean_sub4 = $sum_sub4/16.0;
 
 
@@ -96,7 +96,7 @@ while($row = mysqli_fetch_assoc($query4))
 	$summ2+=$row['mark5_CAT2'];	
 }
 
-$sum_sub5=($summ1)/8 + ($summ2)/8;
+$sum_sub5=($summ1)/7 + ($summ2)/7;
 $mean_sub5 = $sum_sub5/16.0;
 
 
@@ -144,7 +144,7 @@ while($row = mysqli_fetch_assoc($query))
 	$sd_sub5 = $sd_sub5 + $temp5;
 	
 	
-$sd_sub1 = $sd_sub1 / 16.0;
+$sd_sub1 = $sd_sub1 / 15.0;
 $sd_sub1=sqrt(sqrt($sd_sub1));
 
 
@@ -157,7 +157,7 @@ $S_sub1 = $mean_sub1 + (4*($sd_sub1));
 
 
 
-$sd_sub2 = $sd_sub2 / 16.0;
+$sd_sub2 = $sd_sub2 / 15.0;
 $sd_sub2=sqrt(sqrt($sd_sub2));
 
 
@@ -169,7 +169,7 @@ $A_sub2 = $mean_sub2 + (3*($sd_sub2));
 $S_sub2 = $mean_sub2 + (4*($sd_sub2));
 
 
-$sd_sub3 = $sd_sub3 / 16.0;
+$sd_sub3 = $sd_sub3 / 15.0;
 $sd_sub3=sqrt(sqrt($sd_sub3));
 
 
@@ -181,7 +181,7 @@ $A_sub3 = $mean_sub3 + (3*($sd_sub3));
 $S_sub3 = $mean_sub3 + (4*($sd_sub3));
 
 
-$sd_sub4 = $sd_sub4 / 16.0;
+$sd_sub4 = $sd_sub4 / 15.0;
 $sd_sub4=sqrt(sqrt($sd_sub4));
 
 
@@ -193,7 +193,7 @@ $A_sub4 = $mean_sub4 + (3*($sd_sub4));
 $S_sub4 = $mean_sub4 + (4*($sd_sub4));
 
 
-$sd_sub5 = $sd_sub5 / 16.0;
+$sd_sub5 = $sd_sub5 / 15.0;
 $sd_sub5=sqrt(sqrt($sd_sub5));
 
 $E_sub5 = $mean_sub5;
